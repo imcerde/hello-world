@@ -41,17 +41,19 @@ void Year(int year){
 	}
 }
 void f(){
-	for(int i=1;i<10000;i++){
-		int a,b,sum;
+	int sum=1;
+	for(int i=2;i<15;i++){
+		int a,b;
 		do{
 			a=i%10;
 			b=i/10;
 			if(a==1){
 				sum++;
 			}
-		}while(b>10);
+		}while(b>=1);
+		printf("%d=f(%d)\n",sum,i);
 		if(i==sum){
-			printf("%d=f(%d)\n",i,i);
+			break;
 		}
 	}
 }
