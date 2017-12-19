@@ -10,14 +10,13 @@ int main(){
 	for(int i=100;i<10000;i++){
 		if(su(i)){
 			b=i;
-		sum=0;mul=1;sqs=0;
+			sum=0;mul=1;sqs=0;
 			while(b!=0){
 				a=b%10;
 				sum+=a;
 				mul*=a;
 				sqs+=(a*a); 
 				b=b/10;
-				
 			}
 			if(su(sum)&&su(mul)&&su(sqs)){
 				n++;
